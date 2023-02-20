@@ -23,10 +23,6 @@ const getResult = () => {
       getResultHtml(i, daySum, totalSum);
     }
   }
-
-  startingSum.value = '';
-  percent.value = '';
-  days.value = '';
 };
 
 const getResultHtml = (day, daySum, totalSum) => {
