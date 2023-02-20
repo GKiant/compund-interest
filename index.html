@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <form action="submit" id="submit-form">
+        <div class="input-container">
+          <label for="starting-sum">Начальная сумма</label>
+          <input
+            type="number"
+            name="starting sum"
+            id="starting-sum"
+            placeholder="50"
+            min="0"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <label for="percent">Средний % в день</label>
+          <input
+            type="number"
+            name="percent per day"
+            id="percent"
+            placeholder="1.2"
+            step="any"
+            min="0"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <label for="days">Количество дней</label>
+          <input
+            type="number"
+            name="amount of days"
+            id="days"
+            placeholder="30"
+            min="0"
+            required
+          />
+        </div>
+        <div class="input-container radio-container">
+          <label for="compound-percent">
+            <input
+              class="radio-btn"
+              type="radio"
+              id="compound-percent"
+              name="percent"
+              value="compound"
+              checked="checked"
+            />С капитализацией</label
+          >
+
+          <label for="regular-percent"
+            ><input
+              class="radio-btn"
+              type="radio"
+              id="regular-percent"
+              name="percent"
+              value="regular"
+            />Без капитализации
+          </label>
+        </div>
+        <button class="submit-btn" id="submit-btn">Рассчитать</button>
+      </form>
+    </div>
+
+    <div id="result-container" class="result-container">
+      <ul class="result-table" id="result-table"></ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
