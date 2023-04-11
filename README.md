@@ -1,2 +1,2 @@
 # compund-interest
- Coumpiund interest app
+ Coumpound interest app
